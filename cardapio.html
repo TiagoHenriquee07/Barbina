@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cardápio | Restaurante Barbina</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/responsive.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Header (igual ao index) -->
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <h1>BARBINA</h1>
+                <span>Restaurante & Experiências</span>
+            </div>
+            <nav class="nav">
+                <ul>
+                    <li><a href="index.html">Início</a></li>
+                    <li><a href="cardapio.html" class="active">Cardápio</a></li>
+                    <li><a href="reservas.html">Reservas</a></li>
+                    <li><a href="sobre.html">Sobre</a></li>
+                    <li><a href="contato.html">Contato</a></li>
+                </ul>
+            </nav>
+            <div class="menu-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Cardápio -->
+    <section class="hero" style="background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80'); margin-top: 80px; height: 40vh;">
+        <div class="hero-content">
+            <h2>Nosso Cardápio</h2>
+            <p>Descubra nossos sabores exclusivos</p>
+        </div>
+    </section>
+
+    <!-- Cardápio -->
+    <section class="menu">
+        <div class="container">
+            <div class="menu-categories">
+                <button class="category-btn active" data-category="entradas">Entradas</button>
+                <button class="category-btn" data-category="principais">Pratos Principais</button>
+                <button class="category-btn" data-category="bebidas">Bebidas</button>
+                <button class="category-btn" data-category="sobremesas">Sobremesas</button>
+            </div>
+
+            <div class="menu-items active" id="entradas">
+                <div class="menu-item">
+                    <div class="item-info">
+                        <h3>Bruschetta Italiana</h3>
+                        <p>Pão italiano com tomate fresco, manjericão e azeite</p>
+                    </div>
+                    <span class="item-price">R$ 28,90</span>
+                </div>
+                <div class="menu-item">
+                    <div class="item-info">
+                        <h3>Carpaccio de Filé</h3>
+                        <p>Finas fatias de filé mignon com rúcula e parmesão</p>
+                    </div>
+                    <span class="item-price">R$ 42,90</span>
+                </div>
+                <div class="menu-item">
+                    <div class="item-info">
+                        <h3>Bolinhos de Bacalhau</h3>
+                        <p>Tradicionais bolinhos com molho tártaro</p>
+                    </div>
+                    <span class="item-price">R$ 35,90</span>
+                </div>
+            </div>
+
+            <div class="menu-items" id="principais">
+                <div class="menu-item">
+                    <div class="item-info">
+                        <h3>Filé Mignon Barbina</h3>
+                        <p>400g com molho de vinho tinto e batatas rústicas</p>
+                    </div>
+                    <span class="item-price">R$ 89,90</span>
+                </div>
+                <div class="menu-item">
+                    <div class="item-info">
+                        <h3>Risotto de Cogumelos</h3>
+                        <p>Arroz arbóreo com mix de cogumelos e parmesão</p>
+                    </div>
+                    <span class="item-price">R$ 52,90</span>
+                </div>
+                <div class="menu-item">
+                    <div class="item-info">
+                        <h3>Salmão Grelhado</h3>
+                        <p>Com purê de batata-doce e legumes sautée</p>
+                    </div>
+                    <span class="item-price">R$ 68,90</span>
+                </div>
+            </div>
+
+            <div class="menu-items" id="bebidas">
+                <div class="menu-item">
+                    <div class="item-info">
+                        <h3>Vinho Tinto Casa</h3>
+                        <p>Taça do vinho da casa - seleção especial</p>
+                    </div>
+                    <span class="item-price">R$ 18,90</span>
+                </div>
+                <div class="menu-item">
+                    <div class="item-info">
+                        <h3>Caipirinha Barbina</h3>
+                        <p>Clássica com toque especial do nosso bartender</p>
+                    </div>
+                    <span class="item-price">R$ 24,90</span>
+                </div>
+                <div class="menu-item">
+                    <div class="item-info">
+                        <h3>Cerveja Artesanal</h3>
+                        <p>Seleção das melhores cervejarias locais</p>
+                    </div>
+                    <span class="item-price">R$ 19,90</span>
+                </div>
+            </div>
+
+            <div class="menu-items" id="sobremesas">
+                <div class="menu-item">
+                    <div class="item-info">
+                        <h3>Brownie com Sorvete</h3>
+                        <p>Brownie quente com sorvete de baunilha e calda</p>
+                    </div>
+                    <span class="item-price">R$ 26,90</span>
+                </div>
+                <div class="menu-item">
+                    <div class="item-info">
+                        <h3>Cheesecake de Frutas</h3>
+                        <p>Base de biscoito com cobertura de frutas vermelhas</p>
+                    </div>
+                    <span class="item-price">R$ 22,90</span>
+                </div>
+                <div class="menu-item">
+                    <div class="item-info">
+                        <h3>Petit Gateau</h3>
+                        <p>Bolo de chocolate com núcleo derretido</p>
+                    </div>
+                    <span class="item-price">R$ 28,90</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer (igual ao index) -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>BARBINA</h3>
+                    <p>Restaurante & Experiências</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Horário de Funcionamento</h4>
+                    <p>Segunda a Sexta: 11h às 23h</p>
+                    <p>Sábado e Domingo: 12h às 00h</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Contato</h4>
+                    <p><i class="fas fa-map-marker-alt"></i> Rua Exemplo, 123 - Centro</p>
+                    <p><i class="fas fa-phone"></i> (11) 9999-9999</p>
+                    <p><i class="fas fa-envelope"></i> contato@barbina.com</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Restaurante Barbina. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="./js/main.js"></script>
+    <script>
+        // Navegação do cardápio
+        document.addEventListener('DOMContentLoaded', function() {
+            const categoryBtns = document.querySelectorAll('.category-btn');
+            const menuItems = document.querySelectorAll('.menu-items');
+
+            categoryBtns.forEach(btn => {
+                btn.addEventListener('click', function() {
+                    // Remove active de todos
+                    categoryBtns.forEach(b => b.classList.remove('active'));
+                    menuItems.forEach(item => item.classList.remove('active'));
+
+                    // Adiciona active no selecionado
+                    this.classList.add('active');
+                    const category = this.getAttribute('data-category');
+                    document.getElementById(category).classList.add('active');
+                });
+            });
+        });
+    </script>
+</body>
+</html>
