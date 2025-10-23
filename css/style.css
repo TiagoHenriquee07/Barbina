@@ -288,18 +288,27 @@ body {
     border-radius: 15px;
     box-shadow: var(--shadow);
 }
-.feature-text .section-header {
-    text-align: left;
-    margin-bottom: 30px;
+
+.feature-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
-.feature-text .section-header p {
-    margin-left: 0;
-    margin-right: 0;
-    max-width: none;
+
+.feature-text p {
+  margin-bottom: 55px; 
+  color: var(--secondary-color);
+  font-size: 1.1rem;
+  line-height: 1.8;
 }
+
 .feature-text .btn-primary {
-    margin-top: 20px;
+  align-self: flex-start;
+  padding: 14px 40px;
+  font-size: 1rem;
+  border-radius: 50px;
 }
+
 
 /* Seção de Avaliações */
 .testimonials {
