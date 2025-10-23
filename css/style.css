@@ -8,10 +8,10 @@
 }
 
 :root {
-    --primary-color: #a47e3b; /* Dourado sofisticado */
+    --primary-color: #a47e3b; 
     --secondary-color: #7a5c2f;
     --dark-color: #1a1a1a;
-    --light-color: #f8f5f2; /* Off-white quente */
+    --light-color: #f8f5f2; 
     --white: #ffffff;
     --text-color: #333333;
     
@@ -38,7 +38,7 @@ body {
     padding: 0 20px;
 }
 
-/* ===== HEADER ===== */
+/*EADER  */
 .header {
     background: var(--white);
     box-shadow: 0 2px 10px rgba(0,0,0,0.05);
@@ -117,10 +117,10 @@ body {
     font-size: 1.5rem;
     cursor: pointer;
     color: var(--primary-color);
-    z-index: 1001; /* Para ficar acima do menu */
+    z-index: 1001; 
 }
 
-/* ===== HERO SECTIONS ===== */
+/*  HERO SECTIONS */
 .hero {
     background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=1920&q=80');
     background-size: cover;
@@ -165,7 +165,7 @@ body {
     justify-content: center;
 }
 
-/* ===== BOTÕES ===== */
+/* BOTaosS */
 .btn {
     padding: 14px 35px;
     border: 2px solid transparent;
@@ -195,7 +195,7 @@ body {
     transform: translateY(-3px);
 }
 
-/* ===== SECTIONS GERAIS ===== */
+/*  SECTIONS GERAIS  */
 .section-header {
     text-align: center;
     margin-bottom: 60px;
@@ -213,8 +213,7 @@ body {
     margin: 0 auto;
 }
 
-/* ===== NOVAS SEÇÕES DA INDEX ===== */
-/* Seção Filosofia */
+
 .philosophy {
     padding: 100px 0;
 }
@@ -342,7 +341,7 @@ body {
     color: var(--text-color);
 }
 
-/* ===== CTA RESERVA ===== */
+/* CTA RESERVA */
 .cta-reserva {
     padding: 100px 0;
     background: linear-gradient(rgba(26,26,26,0.9), rgba(26,26,26,0.9)), url('https://images.unsplash.com/photo-1414235077428-338989a2e8c0?auto=format&fit=crop&w=1920&q=80');
@@ -366,7 +365,7 @@ body {
     opacity: 0.9;
 }
 
-/* ===== FOOTER ===== */
+/* FOOTER  */
 .footer {
     background: var(--dark-color);
     color: var(--white);
@@ -412,7 +411,7 @@ body {
     opacity: 0.7;
 }
 
-/* ===== PÁGINA DE CARDÁPIO MODERNIZADA ===== */
+/* PÁGINA DE CARDÁPIO MODERNIZADA  */
 .menu { padding: 100px 0; }
 .menu-categories {
     display: flex;
@@ -470,7 +469,7 @@ body {
 
 @keyframes fadeIn { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: translateY(0); } }
 
-/* ===== DEMAIS PÁGINAS (SOBRE, CONTATO, RESERVAS) ===== */
+/*  DEMAIS PÁjINAS (SOBRE, CONTATO, RESERVAS) */
 .nossa-historia { padding: 100px 0; }
 .historia-content { display: grid; grid-template-columns: 1fr 1fr; gap: 60px; align-items: center; }
 .historia-text h2 { font-family: var(--font-headings); font-size: 2.8rem; margin-bottom: 20px; }

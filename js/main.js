@@ -1,5 +1,4 @@
 document.addEventListener('DOMContentLoaded', function() {
-
     // EFEITO DO HEADER AO ROLAR A PÁGINA
     const header = document.querySelector('.header');
     if (header) {
