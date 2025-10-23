@@ -4,18 +4,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Restaurante Barbina | Sabores que Conquistam</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/responsive.css">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
 </head>
 <body>
-    <!-- Header -->
     <header class="header">
         <div class="container">
-            <div class="logo">
+            <a href="index.html" class="logo">
                 <h1>BARBINA</h1>
                 <span>Restaurante & Experiências</span>
-            </div>
+            </a>
             <nav class="nav">
                 <ul>
                     <li><a href="index.html" class="active">Início</a></li>
@@ -25,17 +30,17 @@
                     <li><a href="contato.html">Contato</a></li>
                 </ul>
             </nav>
+            <div class="menu-toggle-placeholder"></div>
             <div class="menu-toggle">
                 <i class="fas fa-bars"></i>
             </div>
         </div>
     </header>
 
-    <!-- Hero Section -->
     <section class="hero">
         <div class="hero-content">
             <h2>Sabores que Conquistam</h2>
-            <p>Uma experiência gastronômica única em cada prato</p>
+            <p>Uma experiência gastronômica única em cada prato.</p>
             <div class="hero-buttons">
                 <a href="reservas.html" class="btn btn-primary">Fazer Reserva</a>
                 <a href="cardapio.html" class="btn btn-secondary">Ver Cardápio</a>
@@ -43,123 +48,101 @@
         </div>
     </section>
 
-    <!-- Destaques -->
-    <section class="highlights">
-        <div class="container">
+    <section class="philosophy">
+        <div class="container anim-fade-up">
             <div class="section-header">
-                <h2>Destaques Barbina</h2>
-                <p>Os favoritos da casa</p>
-            </div>
-            <div class="highlights-grid">
-                <div class="highlight-card">
-                    <div class="highlight-img" style="background-image: url('https://images.unsplash.com/photo-1565299624946-b28f40a0ca4b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80');"></div>
-                    <h3>Pizza Barbina Especial</h3>
-                    <p>Massa artesanal com ingredientes selecionados</p>
-                    <span class="price">R$ 59,90</span>
-                </div>
-                <div class="highlight-card">
-                    <div class="highlight-img" style="background-image: url('https://images.unsplash.com/photo-1568901346375-23c9450c58cd?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80');"></div>
-                    <h3>Hambúrguer Gourmet</h3>
-                    <p>Carne premium com molho secreto da casa</p>
-                    <span class="price">R$ 42,90</span>
-                </div>
-                <div class="highlight-card">
-                    <div class="highlight-img" style="background-image: url('https://images.unsplash.com/photo-1551024506-0bccd828d307?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80');"></div>
-                    <h3>Sobremesa do Chef</h3>
-                    <p>Uma criação exclusiva que surpreende</p>
-                    <span class="price">R$ 28,90</span>
-                </div>
+                <h2>Nossa Filosofia</h2>
+                <p>Acreditamos que cada prato é uma forma de arte. Por isso, selecionamos apenas os ingredientes mais frescos e locais, combinando técnicas clássicas com um toque de inovação para criar sabores memoráveis.</p>
             </div>
         </div>
     </section>
 
-    <!-- Galeria de Comidas -->
-    <section class="gallery">
+    <section class="food-gallery">
         <div class="container">
             <div class="section-header">
-                <h2>Nossa Galeria</h2>
-                <p>Conheça nossos pratos especiais</p>
+                <h2>Nossas Especialidades</h2>
+                <p>Explore os sabores que definem o Barbina.</p>
             </div>
-            <div class="gallery-grid">
-                <div class="gallery-item">
-                    <img src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80" alt="Salada Fresca">
-                    <div class="gallery-overlay">
-                        <h3>Salada Fresca</h3>
-                    </div>
+            <div class="food-gallery-grid">
+                <a href="cardapio.html#principais" class="plate-card anim-fade-up">
+                    <img src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=880&q=80" alt="Prato Principal Saboroso" loading="lazy">
+                    <div class="plate-overlay"><h3>Pratos Principais</h3></div>
+                </a>
+                <a href="cardapio.html#entradas" class="plate-card anim-fade-up">
+                    <img src="https://images.unsplash.com/photo-1551218808-94e220e084d2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=880&q=80" alt="Entrada leve e fresca" loading="lazy">
+                    <div class="plate-overlay"><h3>Entradas</h3></div>
+                </a>
+                <a href="cardapio.html#sobremesas" class="plate-card anim-fade-up">
+                    <img src="https://images.unsplash.com/photo-1565958011703-44f9829ba187?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=880&q=80" alt="Sobremesa deliciosa" loading="lazy">
+                    <div class="plate-overlay"><h3>Sobremesas</h3></div>
+                </a>
+                <a href="cardapio.html#bebidas" class="plate-card anim-fade-up">
+                    <img src="https://images.unsplash.com/photo-1551024506-0bccd828d307?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=880&q=80" alt="Drink refrescante" loading="lazy">
+                    <div class="plate-overlay"><h3>Drinks</h3></div>
+                </a>
+            </div>
+        </div>
+    </section>
+    
+    <section class="feature-section">
+        <div class="container">
+            <div class="feature-content">
+                <div class="feature-image anim-fade-up">
+                    <img src="https://images.unsplash.com/photo-1559847844-5315695dadae?auto=format&fit=crop&w=1000&q=80" alt="Prato de assinatura do Chef" loading="lazy">
                 </div>
-                <div class="gallery-item">
-                    <img src="https://images.unsplash.com/photo-1563379926898-05f4575a45d8?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80" alt="Massas Artesanais">
-                    <div class="gallery-overlay">
-                        <h3>Massas Artesanais</h3>
-                    </div>
-                </div>
-                <div class="gallery-item">
-                    <img src="https://images.unsplash.com/photo-1513104890138-7c749659a591?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80" alt="Pizza Premium">
-                    <div class="gallery-overlay">
-                        <h3>Pizza Premium</h3>
-                    </div>
-                </div>
-                <div class="gallery-item">
-                    <img src="https://images.unsplash.com/photo-1476224203421-9ac39bcb3327?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80" alt="Pratos Executivos">
-                    <div class="gallery-overlay">
-                        <h3>Pratos Executivos</h3>
-                    </div>
-                </div>
-                <div class="gallery-item">
-                    <img src="https://images.unsplash.com/photo-1567620905732-2d1ec7ab7445?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80" alt="Panquecas Especiais">
-                    <div class="gallery-overlay">
-                        <h3>Panquecas Especiais</h3>
-                    </div>
-                </div>
-                <div class="gallery-item">
-                    <img src="https://images.unsplash.com/photo-1565958011703-44f9829ba187?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80" alt="Comida Saudável">
-                    <div class="gallery-overlay">
-                        <h3>Comida Saudável</h3>
+                <div class="feature-text anim-fade-up">
+                    <div class="section-header">
+                        <h2>O Coração da Cozinha</h2>
+                        <p>Nosso Filé Mignon Barbina não é apenas um prato, é uma experiência. Selado à perfeição, regado com um molho de vinho tinto reduzido lentamente e servido sobre um cremoso risoto de parmesão, é a expressão máxima do nosso amor pela alta gastronomia.</p>
+                        <a href="cardapio.html#principais" class="btn btn-primary">Descubra no Cardápio</a>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Galeria de Bebidas -->
-    <section class="drinks-gallery">
+    <section class="testimonials">
         <div class="container">
             <div class="section-header">
-                <h2>Nossas Bebidas</h2>
-                <p>Drinks especiais e vinhos selecionados</p>
+                <h2>O Que Nossos Clientes Dizem</h2>
+                <p>A satisfação de quem nos visita é nossa maior inspiração.</p>
             </div>
-            <div class="drinks-grid">
-                <div class="drink-card">
-                    <img src="https://images.unsplash.com/photo-1514362545857-3bc16c4c7d1b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80" alt="Drinks Especiais">
-                    <h3>Drinks Especiais</h3>
-                    <p>Coquetéis exclusivos do nosso bartender</p>
+            <div class="testimonials-grid">
+                <div class="testimonial-card anim-fade-up">
+                    <div class="stars">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                    </div>
+                    <blockquote>"Uma experiência gastronômica impecável! O ambiente é sofisticado e o atendimento é de primeira. Com certeza o melhor restaurante da região."</blockquote>
+                    <footer>- Mariana Almeida</footer>
                 </div>
-                <div class="drink-card">
-                    <img src="https://images.unsplash.com/photo-1506377247377-2a5b3b417ebb?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80" alt="Vinhos Selecionados">
-                    <h3>Vinhos Selecionados</h3>
-                    <p>Melhores rótulos nacionais e importados</p>
+                <div class="testimonial-card anim-fade-up">
+                    <div class="stars">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                    </div>
+                    <blockquote>"Os pratos são obras de arte, tanto na apresentação quanto no sabor. O carpaccio de entrada e o brownie de sobremesa são divinos!"</blockquote>
+                    <footer>- Rafael Costa</footer>
                 </div>
-                <div class="drink-card">
-                    <img src="https://images.unsplash.com/photo-1558618666-fcd25856cd63?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80" alt="Cervejas Artesanais">
-                    <h3>Cervejas Artesanais</h3>
-                    <p>Seleção das melhores cervejarias</p>
+                <div class="testimonial-card anim-fade-up">
+                    <div class="stars">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                    </div>
+                    <blockquote>"Lugar perfeito para uma comemoração especial. A equipe foi super atenciosa e tornou nossa noite inesquecível. Recomendo de olhos fechados."</blockquote>
+                    <footer>- Lúcia Pereira</footer>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- CTA Reservas -->
     <section class="cta-reserva">
         <div class="container">
             <div class="cta-content">
-                <h2>Faça sua Reserva</h2>
-                <p>Garanta seu lugar para uma experiência inesquecível</p>
+                <h2>Pronto para Viver a Experiência?</h2>
+                <p>Garanta seu lugar em nossa casa e venha desfrutar de momentos memoráveis. Estamos esperando por você.</p>
                 <a href="reservas.html" class="btn btn-primary">Reservar Agora</a>
             </div>
         </div>
     </section>
 
-    <!-- Footer -->
     <footer class="footer">
         <div class="container">
             <div class="footer-content">
@@ -167,13 +150,13 @@
                     <h3>BARBINA</h3>
                     <p>Restaurante & Experiências</p>
                     <div class="social-links">
-                        <a href="#"><i class="fab fa-instagram"></i></a>
-                        <a href="#"><i class="fab fa-facebook"></i></a>
-                        <a href="#"><i class="fab fa-whatsapp"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+                        <a href="#" aria-label="Whatsapp"><i class="fab fa-whatsapp"></i></a>
                     </div>
                 </div>
                 <div class="footer-section">
-                    <h4>Horário de Funcionamento</h4>
+                    <h4>Horários</h4>
                     <p>Segunda a Sexta: 11h às 23h</p>
                     <p>Sábado e Domingo: 12h às 00h</p>
                 </div>
@@ -185,11 +168,11 @@
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2024 Restaurante Barbina. Todos os direitos reservados.</p>
+                <p>&copy; 2025 Restaurante Barbina. Todos os direitos reservados.</p>
             </div>
         </div>
     </footer>
 
-    <script src="./js/main.js"></script>
+    <script src="js/main.js"></script>
 </body>
 </html>

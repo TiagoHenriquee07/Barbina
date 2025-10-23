@@ -4,18 +4,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Reservas | Restaurante Barbina</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/responsive.css">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
 </head>
 <body>
-    <!-- Header (igual ao index) -->
     <header class="header">
         <div class="container">
-            <div class="logo">
+            <a href="index.html" class="logo">
                 <h1>BARBINA</h1>
                 <span>Restaurante & Experiências</span>
-            </div>
+            </a>
             <nav class="nav">
                 <ul>
                     <li><a href="index.html">Início</a></li>
@@ -31,70 +36,65 @@
         </div>
     </header>
 
-    <!-- Hero Reservas -->
-    <section class="hero" style="background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80'); margin-top: 80px; height: 40vh;">
+    <section class="hero-page">
         <div class="hero-content">
             <h2>Faça sua Reserva</h2>
-            <p>Garanta sua experiência gastronômica</p>
+            <p>Garanta sua mesa para uma experiência inesquecível.</p>
         </div>
     </section>
 
-    <!-- Formulário de Reserva -->
     <section class="reserva-form">
         <div class="container">
             <div class="form-container">
                 <form id="reservaForm">
-                    <div class="form-group">
-                        <label for="nome">Nome Completo</label>
-                        <input type="text" id="nome" name="nome" required>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="nome">Nome Completo *</label>
+                            <input type="text" id="nome" name="nome" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="telefone">Telefone *</label>
+                            <input type="tel" id="telefone" name="telefone" required>
+                        </div>
                     </div>
                     <div class="form-group">
-                        <label for="email">E-mail</label>
+                        <label for="email">E-mail *</label>
                         <input type="email" id="email" name="email" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="telefone">Telefone</label>
-                        <input type="tel" id="telefone" name="telefone" required>
                     </div>
                     <div class="form-row">
                         <div class="form-group">
-                            <label for="data">Data</label>
+                            <label for="data">Data *</label>
                             <input type="date" id="data" name="data" required>
                         </div>
                         <div class="form-group">
-                            <label for="hora">Hora</label>
+                            <label for="hora">Hora *</label>
                             <input type="time" id="hora" name="hora" required>
                         </div>
                     </div>
                     <div class="form-row">
                         <div class="form-group">
-                            <label for="pessoas">Número de Pessoas</label>
+                            <label for="pessoas">Nº de Pessoas *</label>
                             <select id="pessoas" name="pessoas" required>
-                                <option value="">Selecione</option>
+                                <option value="" disabled selected>Selecione</option>
                                 <option value="1">1 pessoa</option>
                                 <option value="2">2 pessoas</option>
                                 <option value="3">3 pessoas</option>
                                 <option value="4">4 pessoas</option>
-                                <option value="5">5 pessoas</option>
-                                <option value="6">6 pessoas</option>
-                                <option value="7">7 pessoas</option>
-                                <option value="8">8 pessoas</option>
-                                <option value="9+">9+ pessoas</option>
+                                <option value="5+">5+ pessoas</option>
                             </select>
                         </div>
-                        <div class="form-group">
-                            <label for="ambiente">Ambiente Preferido</label>
+                         <div class="form-group">
+                            <label for="ambiente">Ambiente</label>
                             <select id="ambiente" name="ambiente">
-                                <option value="">Qualquer</option>
+                                <option value="qualquer">Qualquer</option>
                                 <option value="salao">Salão Principal</option>
                                 <option value="varanda">Varanda</option>
-                                <option value="privativo">Área Privativa</option>
                             </select>
                         </div>
                     </div>
                     <div class="form-group">
-                        <label for="observacoes">Observações Especiais</label>
-                        <textarea id="observacoes" name="observacoes" rows="4" placeholder="Alergias, comemorações, necessidades especiais..."></textarea>
+                        <label for="observacoes">Observações</label>
+                        <textarea id="observacoes" name="observacoes" rows="4" placeholder="Ex: Alergias, comemoração de aniversário..."></textarea>
                     </div>
                     <button type="submit" class="btn btn-primary btn-block">Confirmar Reserva</button>
                 </form>
@@ -102,31 +102,6 @@
         </div>
     </section>
 
-    <!-- Informações de Reserva -->
-    <section class="reserva-info">
-        <div class="container">
-            <div class="info-grid">
-                <div class="info-card">
-                    <i class="fas fa-clock"></i>
-                    <h3>Horário de Funcionamento</h3>
-                    <p>Segunda a Sexta: 11h às 23h</p>
-                    <p>Sábado e Domingo: 12h às 00h</p>
-                </div>
-                <div class="info-card">
-                    <i class="fas fa-users"></i>
-                    <h3>Grupos Grandes</h3>
-                    <p>Para grupos acima de 8 pessoas, entre em contato diretamente conosco</p>
-                </div>
-                <div class="info-card">
-                    <i class="fas fa-exclamation-circle"></i>
-                    <h3>Política de Reservas</h3>
-                    <p>Reservas mantidas por até 15 minutos de atraso. Entre em contato em caso de imprevistos</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Footer (igual ao index) -->
     <footer class="footer">
         <div class="container">
             <div class="footer-content">
@@ -134,13 +109,13 @@
                     <h3>BARBINA</h3>
                     <p>Restaurante & Experiências</p>
                     <div class="social-links">
-                        <a href="#"><i class="fab fa-instagram"></i></a>
-                        <a href="#"><i class="fab fa-facebook"></i></a>
-                        <a href="#"><i class="fab fa-whatsapp"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+                        <a href="#" aria-label="Whatsapp"><i class="fab fa-whatsapp"></i></a>
                     </div>
                 </div>
                 <div class="footer-section">
-                    <h4>Horário de Funcionamento</h4>
+                    <h4>Horários</h4>
                     <p>Segunda a Sexta: 11h às 23h</p>
                     <p>Sábado e Domingo: 12h às 00h</p>
                 </div>
@@ -152,12 +127,12 @@
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2024 Restaurante Barbina. Todos os direitos reservados.</p>
+                <p>&copy; 2025 Restaurante Barbina. Todos os direitos reservados.</p>
             </div>
         </div>
     </footer>
 
-    <script src="./js/main.js"></script>
-    <script src="./js/reservas.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/reservas.js"></script>
 </body>
 </html>
